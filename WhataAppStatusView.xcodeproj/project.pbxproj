@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444459A8202BFC34006E4D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444459A7202BFC34006E4D9B /* Main.storyboard */; };
+		444459AA202BFD03006E4D9B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444459A9202BFD03006E4D9B /* Launch Screen.storyboard */; };
+		77CB803A6CB88077E732FDE1 /* Pods_WhataAppStatusViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43311F72904C30F98F5858F9 /* Pods_WhataAppStatusViewTests.framework */; };
+		AFCB46CF7C0D56BCEFDE45FA /* Pods_WhataAppStatusViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70005FF8AF9A16F532C47CEE /* Pods_WhataAppStatusViewUITests.framework */; };
+		F2FD566CE69319696ED96EEA /* Pods_WhataAppStatusView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A1FD0AE124357FB31516C8 /* Pods_WhataAppStatusView.framework */; };
+		FF1D842F202B410800FC23A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D842E202B410800FC23A5 /* AppDelegate.swift */; };
+		FF1D8431202B410800FC23A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8430202B410800FC23A5 /* ViewController.swift */; };
+		FF1D8437202B410800FC23A5 /* WhataAppStatusView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8435202B410800FC23A5 /* WhataAppStatusView.xcdatamodeld */; };
+		FF1D8439202B410800FC23A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8438202B410800FC23A5 /* Assets.xcassets */; };
+		FF1D8447202B410800FC23A5 /* WhataAppStatusViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8446202B410800FC23A5 /* WhataAppStatusViewTests.swift */; };
+		FF1D8452202B410900FC23A5 /* WhataAppStatusViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8451202B410900FC23A5 /* WhataAppStatusViewUITests.swift */; };
+		FF1D8460202B429700FC23A5 /* collectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D845F202B429700FC23A5 /* collectionCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1D8443202B410800FC23A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1D8423202B410800FC23A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1D842A202B410800FC23A5;
+			remoteInfo = WhataAppStatusView;
+		};
+		FF1D844E202B410900FC23A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1D8423202B410800FC23A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1D842A202B410800FC23A5;
+			remoteInfo = WhataAppStatusView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017BAFD4E7A0364B9E05F3B4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16B6B0391196280711DD9519 /* Pods-WhataAppStatusView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView.release.xcconfig"; sourceTree = "<group>"; };
+		43311F72904C30F98F5858F9 /* Pods_WhataAppStatusViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhataAppStatusViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		444459A7202BFC34006E4D9B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		444459A9202BFD03006E4D9B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		570FCD2CD43759ACA98049B2 /* Pods-WhataAppStatusViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61A1FD0AE124357FB31516C8 /* Pods_WhataAppStatusView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhataAppStatusView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A788D902CF5505548EF715 /* Pods-WhataAppStatusViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		70005FF8AF9A16F532C47CEE /* Pods_WhataAppStatusViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhataAppStatusViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8339BC47C0F16BC7BAF22EE9 /* Pods-WhataAppStatusView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView.debug.xcconfig"; sourceTree = "<group>"; };
+		F787D23D511C30D9EA554036 /* Pods-WhataAppStatusViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhataAppStatusViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF1D842B202B410800FC23A5 /* WhataAppStatusView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhataAppStatusView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D842E202B410800FC23A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1D8430202B410800FC23A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF1D8436202B410800FC23A5 /* WhataAppStatusView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhataAppStatusView.xcdatamodel; sourceTree = "<group>"; };
+		FF1D8438202B410800FC23A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1D843D202B410800FC23A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1D8442202B410800FC23A5 /* WhataAppStatusViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhataAppStatusViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D8446202B410800FC23A5 /* WhataAppStatusViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhataAppStatusViewTests.swift; sourceTree = "<group>"; };
+		FF1D8448202B410900FC23A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1D844D202B410900FC23A5 /* WhataAppStatusViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhataAppStatusViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D8451202B410900FC23A5 /* WhataAppStatusViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhataAppStatusViewUITests.swift; sourceTree = "<group>"; };
+		FF1D8453202B410900FC23A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1D845F202B429700FC23A5 /* collectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1D8428202B410800FC23A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FD566CE69319696ED96EEA /* Pods_WhataAppStatusView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D843F202B410800FC23A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CB803A6CB88077E732FDE1 /* Pods_WhataAppStatusViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D844A202B410900FC23A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB46CF7C0D56BCEFDE45FA /* Pods_WhataAppStatusViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A0F8F4B1D684F463CE54F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61A1FD0AE124357FB31516C8 /* Pods_WhataAppStatusView.framework */,
+				43311F72904C30F98F5858F9 /* Pods_WhataAppStatusViewTests.framework */,
+				70005FF8AF9A16F532C47CEE /* Pods_WhataAppStatusViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68F4111F3DD0A5094523D952 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8339BC47C0F16BC7BAF22EE9 /* Pods-WhataAppStatusView.debug.xcconfig */,
+				16B6B0391196280711DD9519 /* Pods-WhataAppStatusView.release.xcconfig */,
+				570FCD2CD43759ACA98049B2 /* Pods-WhataAppStatusViewTests.debug.xcconfig */,
+				68A788D902CF5505548EF715 /* Pods-WhataAppStatusViewTests.release.xcconfig */,
+				017BAFD4E7A0364B9E05F3B4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */,
+				F787D23D511C30D9EA554036 /* Pods-WhataAppStatusViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF1D8422202B410800FC23A5 = {
+			isa = PBXGroup;
+			children = (
+				FF1D842D202B410800FC23A5 /* WhataAppStatusView */,
+				FF1D8445202B410800FC23A5 /* WhataAppStatusViewTests */,
+				FF1D8450202B410900FC23A5 /* WhataAppStatusViewUITests */,
+				FF1D842C202B410800FC23A5 /* Products */,
+				68F4111F3DD0A5094523D952 /* Pods */,
+				15A0F8F4B1D684F463CE54F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1D842C202B410800FC23A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D842B202B410800FC23A5 /* WhataAppStatusView.app */,
+				FF1D8442202B410800FC23A5 /* WhataAppStatusViewTests.xctest */,
+				FF1D844D202B410900FC23A5 /* WhataAppStatusViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1D842D202B410800FC23A5 /* WhataAppStatusView */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D842E202B410800FC23A5 /* AppDelegate.swift */,
+				FF1D8430202B410800FC23A5 /* ViewController.swift */,
+				FF1D845F202B429700FC23A5 /* collectionCell.swift */,
+				FF1D8438202B410800FC23A5 /* Assets.xcassets */,
+				FF1D843D202B410800FC23A5 /* Info.plist */,
+				FF1D8435202B410800FC23A5 /* WhataAppStatusView.xcdatamodeld */,
+				444459A7202BFC34006E4D9B /* Main.storyboard */,
+				444459A9202BFD03006E4D9B /* Launch Screen.storyboard */,
+			);
+			path = WhataAppStatusView;
+			sourceTree = "<group>";
+		};
+		FF1D8445202B410800FC23A5 /* WhataAppStatusViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D8446202B410800FC23A5 /* WhataAppStatusViewTests.swift */,
+				FF1D8448202B410900FC23A5 /* Info.plist */,
+			);
+			path = WhataAppStatusViewTests;
+			sourceTree = "<group>";
+		};
+		FF1D8450202B410900FC23A5 /* WhataAppStatusViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D8451202B410900FC23A5 /* WhataAppStatusViewUITests.swift */,
+				FF1D8453202B410900FC23A5 /* Info.plist */,
+			);
+			path = WhataAppStatusViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1D842A202B410800FC23A5 /* WhataAppStatusView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D8456202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusView" */;
+			buildPhases = (
+				F403048E435FEA19850CB6A0 /* [CP] Check Pods Manifest.lock */,
+				FF1D8427202B410800FC23A5 /* Sources */,
+				FF1D8428202B410800FC23A5 /* Frameworks */,
+				FF1D8429202B410800FC23A5 /* Resources */,
+				28C412E61E101992E165DBE4 /* [CP] Embed Pods Frameworks */,
+				0C2C7939EDD51E00C50E2BD0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhataAppStatusView;
+			productName = WhataAppStatusView;
+			productReference = FF1D842B202B410800FC23A5 /* WhataAppStatusView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1D8441202B410800FC23A5 /* WhataAppStatusViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D8459202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusViewTests" */;
+			buildPhases = (
+				99B75B9BE30DA68E73594B6E /* [CP] Check Pods Manifest.lock */,
+				FF1D843E202B410800FC23A5 /* Sources */,
+				FF1D843F202B410800FC23A5 /* Frameworks */,
+				FF1D8440202B410800FC23A5 /* Resources */,
+				7E3CDA0EAD4902F44B1C84CF /* [CP] Embed Pods Frameworks */,
+				F450F52F487526E1AB65331D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1D8444202B410800FC23A5 /* PBXTargetDependency */,
+			);
+			name = WhataAppStatusViewTests;
+			productName = WhataAppStatusViewTests;
+			productReference = FF1D8442202B410800FC23A5 /* WhataAppStatusViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1D844C202B410900FC23A5 /* WhataAppStatusViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D845C202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusViewUITests" */;
+			buildPhases = (
+				51D3690D9296B2BC16DE2FCD /* [CP] Check Pods Manifest.lock */,
+				FF1D8449202B410900FC23A5 /* Sources */,
+				FF1D844A202B410900FC23A5 /* Frameworks */,
+				FF1D844B202B410900FC23A5 /* Resources */,
+				A3B38EDA866EA3E86C468B23 /* [CP] Embed Pods Frameworks */,
+				B36E9BEC247C752CBBB368D6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1D844F202B410900FC23A5 /* PBXTargetDependency */,
+			);
+			name = WhataAppStatusViewUITests;
+			productName = WhataAppStatusViewUITests;
+			productReference = FF1D844D202B410900FC23A5 /* WhataAppStatusViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1D8423202B410800FC23A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Kondya;
+				TargetAttributes = {
+					FF1D842A202B410800FC23A5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FF1D8441202B410800FC23A5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1D842A202B410800FC23A5;
+					};
+					FF1D844C202B410900FC23A5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1D842A202B410800FC23A5;
+					};
+				};
+			};
+			buildConfigurationList = FF1D8426202B410800FC23A5 /* Build configuration list for PBXProject "WhataAppStatusView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1D8422202B410800FC23A5;
+			productRefGroup = FF1D842C202B410800FC23A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1D842A202B410800FC23A5 /* WhataAppStatusView */,
+				FF1D8441202B410800FC23A5 /* WhataAppStatusViewTests */,
+				FF1D844C202B410900FC23A5 /* WhataAppStatusViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1D8429202B410800FC23A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444459AA202BFD03006E4D9B /* Launch Screen.storyboard in Resources */,
+				FF1D8439202B410800FC23A5 /* Assets.xcassets in Resources */,
+				444459A8202BFC34006E4D9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D8440202B410800FC23A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D844B202B410900FC23A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C2C7939EDD51E00C50E2BD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28C412E61E101992E165DBE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D3690D9296B2BC16DE2FCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhataAppStatusViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3CDA0EAD4902F44B1C84CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B75B9BE30DA68E73594B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhataAppStatusViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B38EDA866EA3E86C468B23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36E9BEC247C752CBBB368D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F403048E435FEA19850CB6A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhataAppStatusView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F450F52F487526E1AB65331D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1D8427202B410800FC23A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D8431202B410800FC23A5 /* ViewController.swift in Sources */,
+				FF1D8437202B410800FC23A5 /* WhataAppStatusView.xcdatamodeld in Sources */,
+				FF1D842F202B410800FC23A5 /* AppDelegate.swift in Sources */,
+				FF1D8460202B429700FC23A5 /* collectionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D843E202B410800FC23A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D8447202B410800FC23A5 /* WhataAppStatusViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D8449202B410900FC23A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D8452202B410900FC23A5 /* WhataAppStatusViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1D8444202B410800FC23A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1D842A202B410800FC23A5 /* WhataAppStatusView */;
+			targetProxy = FF1D8443202B410800FC23A5 /* PBXContainerItemProxy */;
+		};
+		FF1D844F202B410900FC23A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1D842A202B410800FC23A5 /* WhataAppStatusView */;
+			targetProxy = FF1D844E202B410900FC23A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF1D8454202B410900FC23A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF1D8455202B410900FC23A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1D8457202B410900FC23A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8339BC47C0F16BC7BAF22EE9 /* Pods-WhataAppStatusView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhataAppStatusView",
+				);
+				INFOPLIST_FILE = WhataAppStatusView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1D8458202B410900FC23A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B6B0391196280711DD9519 /* Pods-WhataAppStatusView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhataAppStatusView",
+				);
+				INFOPLIST_FILE = WhataAppStatusView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF1D845A202B410900FC23A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570FCD2CD43759ACA98049B2 /* Pods-WhataAppStatusViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				INFOPLIST_FILE = WhataAppStatusViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhataAppStatusView.app/WhataAppStatusView";
+			};
+			name = Debug;
+		};
+		FF1D845B202B410900FC23A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A788D902CF5505548EF715 /* Pods-WhataAppStatusViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				INFOPLIST_FILE = WhataAppStatusViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhataAppStatusView.app/WhataAppStatusView";
+			};
+			name = Release;
+		};
+		FF1D845D202B410900FC23A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017BAFD4E7A0364B9E05F3B4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				INFOPLIST_FILE = WhataAppStatusViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhataAppStatusView;
+			};
+			name = Debug;
+		};
+		FF1D845E202B410900FC23A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F787D23D511C30D9EA554036 /* Pods-WhataAppStatusViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMUY72KH99;
+				INFOPLIST_FILE = WhataAppStatusViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhataAppStatusViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhataAppStatusView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1D8426202B410800FC23A5 /* Build configuration list for PBXProject "WhataAppStatusView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D8454202B410900FC23A5 /* Debug */,
+				FF1D8455202B410900FC23A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D8456202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D8457202B410900FC23A5 /* Debug */,
+				FF1D8458202B410900FC23A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D8459202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D845A202B410900FC23A5 /* Debug */,
+				FF1D845B202B410900FC23A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D845C202B410900FC23A5 /* Build configuration list for PBXNativeTarget "WhataAppStatusViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D845D202B410900FC23A5 /* Debug */,
+				FF1D845E202B410900FC23A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF1D8435202B410800FC23A5 /* WhataAppStatusView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF1D8436202B410800FC23A5 /* WhataAppStatusView.xcdatamodel */,
+			);
+			currentVersion = FF1D8436202B410800FC23A5 /* WhataAppStatusView.xcdatamodel */;
+			path = WhataAppStatusView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF1D8423202B410800FC23A5 /* Project object */;
+}

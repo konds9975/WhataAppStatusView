@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDDDEBF4DB465F3EE253A58B15419DF /* SnapInAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */; };
+		1125A5CE7857DA14A4C8E6D742C4596F /* RotateInOutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */; };
+		1802C70744FC5ACF32217ACBF5260972 /* ParallaxAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */; };
+		1DB658B6052ECB623162518123B77756 /* CrossFadeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */; };
+		24AD4B24CB6DFBD7E3B2F3FEFFF29D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		25C0613E2A219CCBC754E32839090857 /* LinearCardAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */; };
+		3448F958C584DB2F0007F60C1D7C8F0E /* AnimatedCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */; };
+		512AA18536E991DB9810440F3D059713 /* Pods-WhataAppStatusViewUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D898B40F57320675A3512A1FB41EBDE1 /* Pods-WhataAppStatusViewUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520A9C5F907E09600B65840BD97D7CC7 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */; };
+		61C552D3D8E8535D17FE67E7A1241E2F /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */; };
+		675FC8085F139617288ECDF622AFBDB7 /* LayoutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */; };
+		6C3E0ED549F157B68511CEA0FCFFBE2C /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */; };
+		6C6530161EB5F536343D7313AA5E4970 /* Pods-WhataAppStatusView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31D51F8A8EED8835802F2463DA134E /* Pods-WhataAppStatusView-dummy.m */; };
+		7F40B8BBCC675E39488BCC8C4B49268A /* ZoomInOutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */; };
+		897E269054C1B3652DF11A747B7EA5EC /* Pods-WhataAppStatusView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED90EC9806D71A74312252C22C2B5A0 /* Pods-WhataAppStatusView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4312948C1CDF0C35BC92E6118602537 /* AnimatedCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54630491BB0108B124C967C2A100F08 /* PageAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */; };
+		C1CDB4914EC35342329048C7E1B97C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CE1AE9BCC0356B6DA23C0910A8D3C07C /* Pods-WhataAppStatusViewUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DD39397B0D04AF308ACF2B5A150EC /* Pods-WhataAppStatusViewUITests-dummy.m */; };
+		E0C375B51E980BDBCECBC1D8B780FC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E136551624A6237062FB56A50900ED7D /* Pods-WhataAppStatusViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482FFCCAFDFBC74310B9608A44BC0FAF /* Pods-WhataAppStatusViewTests-dummy.m */; };
+		F22072E3AA0059CF8F9FC4FF9EB6C0B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FC856C353568E23CDC32DBA4F8835F20 /* Pods-WhataAppStatusViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0C982F2847BC7142293C767E6B3455 /* Pods-WhataAppStatusViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF66261F0A0AAFDB74CC33CB5C409658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B5F9358EAD17782FA546BF99060034;
+			remoteInfo = AnimatedCollectionViewLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B8C0C73D20393ED70AF43E847311BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAttributesAnimator.swift; path = Source/LayoutAttributesAnimator.swift; sourceTree = "<group>"; };
+		1373B90E408734A2DC034B2BA958F899 /* AnimatedCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatedCollectionViewLayout.framework; path = AnimatedCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C982F2847BC7142293C767E6B3455 /* Pods-WhataAppStatusViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhataAppStatusViewTests-umbrella.h"; sourceTree = "<group>"; };
+		25FA0D4E4BEA9FE7EFE0E75642387152 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B818D57E883B38A81AF0A91EB5534DD /* AnimatedCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageAttributesAnimator.swift; path = Source/PageAttributesAnimator.swift; sourceTree = "<group>"; };
+		352C41CD1064E76A512884CA9374F0F5 /* Pods_WhataAppStatusView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhataAppStatusView.framework; path = "Pods-WhataAppStatusView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxAttributesAnimator.swift; path = Source/ParallaxAttributesAnimator.swift; sourceTree = "<group>"; };
+		3967E2F49C4AF777A850273F6F747ED4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapInAttributesAnimator.swift; path = Source/SnapInAttributesAnimator.swift; sourceTree = "<group>"; };
+		3F53AA00537696DBAFF6882DFAE7F932 /* Pods-WhataAppStatusView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusView.debug.xcconfig"; sourceTree = "<group>"; };
+		482FFCCAFDFBC74310B9608A44BC0FAF /* Pods-WhataAppStatusViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhataAppStatusViewTests-dummy.m"; sourceTree = "<group>"; };
+		50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CubeAttributesAnimator.swift; path = Source/CubeAttributesAnimator.swift; sourceTree = "<group>"; };
+		529874B35D9D664EDE85BF8B5AABDB1F /* Pods-WhataAppStatusViewUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusViewUITests-frameworks.sh"; sourceTree = "<group>"; };
+		53CC4C2C37EA450A9146ADBA7F4B60FC /* Pods-WhataAppStatusView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusView.release.xcconfig"; sourceTree = "<group>"; };
+		553300C3DA14AD8C2257BEA29C6BB7D3 /* Pods_WhataAppStatusViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhataAppStatusViewUITests.framework; path = "Pods-WhataAppStatusViewUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BFB27DB318C91E63056C1C828B5B8E /* Pods-WhataAppStatusView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhataAppStatusView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomInOutAttributesAnimator.swift; path = Source/ZoomInOutAttributesAnimator.swift; sourceTree = "<group>"; };
+		5ED90EC9806D71A74312252C22C2B5A0 /* Pods-WhataAppStatusView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhataAppStatusView-umbrella.h"; sourceTree = "<group>"; };
+		6565574E9FAEA5929B8B31BF519D6407 /* Pods-WhataAppStatusViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhataAppStatusViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77098BEEB7FBB2AD7F510DCD943B0345 /* AnimatedCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AnimatedCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		793F144799DDEB2FB364558A41C21191 /* Pods-WhataAppStatusViewTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusViewTests-resources.sh"; sourceTree = "<group>"; };
+		796BAA04D3FF2BBECAC01905E0102EDF /* Pods_WhataAppStatusViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhataAppStatusViewTests.framework; path = "Pods-WhataAppStatusViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B273DBBAA08445E675F9EB54EECDF1E /* Pods-WhataAppStatusView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhataAppStatusView-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CA1F7483AE4E11936CE2E92D2E3171F /* Pods-WhataAppStatusViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F45A65AB2E4D23A9FBFC4D491342BCC /* Pods-WhataAppStatusView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusView-resources.sh"; sourceTree = "<group>"; };
+		81181C8073C5F476234D8EF71E91983D /* Pods-WhataAppStatusView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusView-frameworks.sh"; sourceTree = "<group>"; };
+		8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossFadeAttributesAnimator.swift; path = Source/CrossFadeAttributesAnimator.swift; sourceTree = "<group>"; };
+		8D4148042A70D55C92DCD649190A7DFE /* Pods-WhataAppStatusViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedCollectionViewLayout.swift; path = Source/AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "Source/UIView+Anchor.swift"; sourceTree = "<group>"; };
+		A3624D323EB6907738AF78C885CA1467 /* Pods-WhataAppStatusView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WhataAppStatusView.modulemap"; sourceTree = "<group>"; };
+		A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		B024DC7AD18C49AC0546AD2846FA218C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E337CEB2C6EEFC7CCDB2A9748764EC /* Pods-WhataAppStatusViewUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WhataAppStatusViewUITests.modulemap"; sourceTree = "<group>"; };
+		C1AD300A71782C540661D47E6FC0A8B3 /* Pods-WhataAppStatusViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhataAppStatusViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearCardAttributesAnimator.swift; path = Source/LinearCardAttributesAnimator.swift; sourceTree = "<group>"; };
+		C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		D0BEEB339242A64BA9B64D2979835268 /* Pods-WhataAppStatusViewUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhataAppStatusViewUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D898B40F57320675A3512A1FB41EBDE1 /* Pods-WhataAppStatusViewUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhataAppStatusViewUITests-umbrella.h"; sourceTree = "<group>"; };
+		D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		DF31D51F8A8EED8835802F2463DA134E /* Pods-WhataAppStatusView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhataAppStatusView-dummy.m"; sourceTree = "<group>"; };
+		E00F2B40D02A35A3F8B87A27E6FE10F8 /* Pods-WhataAppStatusViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WhataAppStatusViewTests.modulemap"; sourceTree = "<group>"; };
+		E3D957FA7D85DF11D856026692E75E62 /* Pods-WhataAppStatusViewUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhataAppStatusViewUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E60766BCB3A5787A8A728856AD8EC46E /* Pods-WhataAppStatusViewUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusViewUITests-resources.sh"; sourceTree = "<group>"; };
+		EAEBC20B0EFAFC3A1458F19BD8BFDD97 /* Pods-WhataAppStatusViewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhataAppStatusViewTests-frameworks.sh"; sourceTree = "<group>"; };
+		F03DD39397B0D04AF308ACF2B5A150EC /* Pods-WhataAppStatusViewUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhataAppStatusViewUITests-dummy.m"; sourceTree = "<group>"; };
+		F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotateInOutAttributesAnimator.swift; path = Source/RotateInOutAttributesAnimator.swift; sourceTree = "<group>"; };
+		F8666ED31390162BC386FDE4D75F2694 /* Pods-WhataAppStatusViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhataAppStatusViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF6B6D075C0D1BB323E441ADB7D85316 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D0439D1724D83A5467A687F34E3A04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24AD4B24CB6DFBD7E3B2F3FEFFF29D66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A17B76E2F9E31BC00B1C9870ED23825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22072E3AA0059CF8F9FC4FF9EB6C0B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A10FC867E9EA8C6F7D4E6761B7D474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C375B51E980BDBCECBC1D8B780FC19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B286E7A43102940D94EC219C3FBC877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CDB4914EC35342329048C7E1B97C78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172B9D79CF8D44F6F879F776F1488651 /* Pods-WhataAppStatusViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B024DC7AD18C49AC0546AD2846FA218C /* Info.plist */,
+				B6E337CEB2C6EEFC7CCDB2A9748764EC /* Pods-WhataAppStatusViewUITests.modulemap */,
+				E3D957FA7D85DF11D856026692E75E62 /* Pods-WhataAppStatusViewUITests-acknowledgements.markdown */,
+				D0BEEB339242A64BA9B64D2979835268 /* Pods-WhataAppStatusViewUITests-acknowledgements.plist */,
+				F03DD39397B0D04AF308ACF2B5A150EC /* Pods-WhataAppStatusViewUITests-dummy.m */,
+				529874B35D9D664EDE85BF8B5AABDB1F /* Pods-WhataAppStatusViewUITests-frameworks.sh */,
+				E60766BCB3A5787A8A728856AD8EC46E /* Pods-WhataAppStatusViewUITests-resources.sh */,
+				D898B40F57320675A3512A1FB41EBDE1 /* Pods-WhataAppStatusViewUITests-umbrella.h */,
+				3967E2F49C4AF777A850273F6F747ED4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */,
+				7CA1F7483AE4E11936CE2E92D2E3171F /* Pods-WhataAppStatusViewUITests.release.xcconfig */,
+			);
+			name = "Pods-WhataAppStatusViewUITests";
+			path = "Target Support Files/Pods-WhataAppStatusViewUITests";
+			sourceTree = "<group>";
+		};
+		419BA8E25AAB52439A6CDC16D937C354 /* Pods-WhataAppStatusViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B6D075C0D1BB323E441ADB7D85316 /* Info.plist */,
+				E00F2B40D02A35A3F8B87A27E6FE10F8 /* Pods-WhataAppStatusViewTests.modulemap */,
+				6565574E9FAEA5929B8B31BF519D6407 /* Pods-WhataAppStatusViewTests-acknowledgements.markdown */,
+				F8666ED31390162BC386FDE4D75F2694 /* Pods-WhataAppStatusViewTests-acknowledgements.plist */,
+				482FFCCAFDFBC74310B9608A44BC0FAF /* Pods-WhataAppStatusViewTests-dummy.m */,
+				EAEBC20B0EFAFC3A1458F19BD8BFDD97 /* Pods-WhataAppStatusViewTests-frameworks.sh */,
+				793F144799DDEB2FB364558A41C21191 /* Pods-WhataAppStatusViewTests-resources.sh */,
+				1B0C982F2847BC7142293C767E6B3455 /* Pods-WhataAppStatusViewTests-umbrella.h */,
+				C1AD300A71782C540661D47E6FC0A8B3 /* Pods-WhataAppStatusViewTests.debug.xcconfig */,
+				8D4148042A70D55C92DCD649190A7DFE /* Pods-WhataAppStatusViewTests.release.xcconfig */,
+			);
+			name = "Pods-WhataAppStatusViewTests";
+			path = "Target Support Files/Pods-WhataAppStatusViewTests";
+			sourceTree = "<group>";
+		};
+		5291A0D06BC93701B5409AE8FC7739C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				679186B6E411ACB2CA98EF387F08A768 /* Pods-WhataAppStatusView */,
+				419BA8E25AAB52439A6CDC16D937C354 /* Pods-WhataAppStatusViewTests */,
+				172B9D79CF8D44F6F879F776F1488651 /* Pods-WhataAppStatusViewUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5BDD77948C3EF362689FA0C2B702970A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1373B90E408734A2DC034B2BA958F899 /* AnimatedCollectionViewLayout.framework */,
+				352C41CD1064E76A512884CA9374F0F5 /* Pods_WhataAppStatusView.framework */,
+				796BAA04D3FF2BBECAC01905E0102EDF /* Pods_WhataAppStatusViewTests.framework */,
+				553300C3DA14AD8C2257BEA29C6BB7D3 /* Pods_WhataAppStatusViewUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		679186B6E411ACB2CA98EF387F08A768 /* Pods-WhataAppStatusView */ = {
+			isa = PBXGroup;
+			children = (
+				25FA0D4E4BEA9FE7EFE0E75642387152 /* Info.plist */,
+				A3624D323EB6907738AF78C885CA1467 /* Pods-WhataAppStatusView.modulemap */,
+				57BFB27DB318C91E63056C1C828B5B8E /* Pods-WhataAppStatusView-acknowledgements.markdown */,
+				7B273DBBAA08445E675F9EB54EECDF1E /* Pods-WhataAppStatusView-acknowledgements.plist */,
+				DF31D51F8A8EED8835802F2463DA134E /* Pods-WhataAppStatusView-dummy.m */,
+				81181C8073C5F476234D8EF71E91983D /* Pods-WhataAppStatusView-frameworks.sh */,
+				7F45A65AB2E4D23A9FBFC4D491342BCC /* Pods-WhataAppStatusView-resources.sh */,
+				5ED90EC9806D71A74312252C22C2B5A0 /* Pods-WhataAppStatusView-umbrella.h */,
+				3F53AA00537696DBAFF6882DFAE7F932 /* Pods-WhataAppStatusView.debug.xcconfig */,
+				53CC4C2C37EA450A9146ADBA7F4B60FC /* Pods-WhataAppStatusView.release.xcconfig */,
+			);
+			name = "Pods-WhataAppStatusView";
+			path = "Target Support Files/Pods-WhataAppStatusView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				899E3B0E3979A54B0A2D1E10EC8F64C3 /* Pods */,
+				5BDD77948C3EF362689FA0C2B702970A /* Products */,
+				5291A0D06BC93701B5409AE8FC7739C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		899E3B0E3979A54B0A2D1E10EC8F64C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB816B6B732964554C465F04299CC610 /* AnimatedCollectionViewLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB816B6B732964554C465F04299CC610 /* AnimatedCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */,
+				8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */,
+				50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */,
+				0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */,
+				C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */,
+				325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */,
+				3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */,
+				F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */,
+				39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */,
+				968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */,
+				5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */,
+				DF5EB051A0EFE1A7151F8733F8097AFC /* Support Files */,
+			);
+			name = AnimatedCollectionViewLayout;
+			path = AnimatedCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		DF5EB051A0EFE1A7151F8733F8097AFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77098BEEB7FBB2AD7F510DCD943B0345 /* AnimatedCollectionViewLayout.modulemap */,
+				A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */,
+				C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */,
+				2B818D57E883B38A81AF0A91EB5534DD /* AnimatedCollectionViewLayout-prefix.pch */,
+				D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */,
+				08B8C0C73D20393ED70AF43E847311BB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AnimatedCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		072D30E4131229B41500419190802A35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512AA18536E991DB9810440F3D059713 /* Pods-WhataAppStatusViewUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400C7DE3C43D2C9F2962DE85783B13C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC856C353568E23CDC32DBA4F8835F20 /* Pods-WhataAppStatusViewTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2616B0C39CC20BFE487941F382F2740 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897E269054C1B3652DF11A747B7EA5EC /* Pods-WhataAppStatusView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD22FD7D889DDD75136E3A022E855F7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4312948C1CDF0C35BC92E6118602537 /* AnimatedCollectionViewLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C88F719B2AF55EEFFD88A2BE8F10DD /* Build configuration list for PBXNativeTarget "AnimatedCollectionViewLayout" */;
+			buildPhases = (
+				809FA6DE3ED35BB7B97126DA58072C76 /* Sources */,
+				7B286E7A43102940D94EC219C3FBC877 /* Frameworks */,
+				CD22FD7D889DDD75136E3A022E855F7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatedCollectionViewLayout;
+			productName = AnimatedCollectionViewLayout;
+			productReference = 1373B90E408734A2DC034B2BA958F899 /* AnimatedCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B887BA0ECF52C1204EFE0681DF055A05 /* Pods-WhataAppStatusViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97CCAED439F01986FCE2DAA710E330CD /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusViewUITests" */;
+			buildPhases = (
+				9239557360134B2D39D5AC1A05838D93 /* Sources */,
+				3A17B76E2F9E31BC00B1C9870ED23825 /* Frameworks */,
+				072D30E4131229B41500419190802A35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WhataAppStatusViewUITests";
+			productName = "Pods-WhataAppStatusViewUITests";
+			productReference = 553300C3DA14AD8C2257BEA29C6BB7D3 /* Pods_WhataAppStatusViewUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C119902DF08B8FBBA21B8504BE74202A /* Pods-WhataAppStatusView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D648DDFE492E75ACDA96D5B9AF1EB32 /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusView" */;
+			buildPhases = (
+				EBFAC31AE21E18AFC926944FB3F7456E /* Sources */,
+				42A10FC867E9EA8C6F7D4E6761B7D474 /* Frameworks */,
+				B2616B0C39CC20BFE487941F382F2740 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				902B3008E326C2F6E353131A6EB7F2A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhataAppStatusView";
+			productName = "Pods-WhataAppStatusView";
+			productReference = 352C41CD1064E76A512884CA9374F0F5 /* Pods_WhataAppStatusView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEB3CB9047D1EFD7B0D74035C2DBB4BD /* Pods-WhataAppStatusViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501057DFF3B0B1AE04BDE7C37D1030C7 /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusViewTests" */;
+			buildPhases = (
+				0AFB1E0B1263998C936854A6CB11FD9C /* Sources */,
+				1D0439D1724D83A5467A687F34E3A04D /* Frameworks */,
+				400C7DE3C43D2C9F2962DE85783B13C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WhataAppStatusViewTests";
+			productName = "Pods-WhataAppStatusViewTests";
+			productReference = 796BAA04D3FF2BBECAC01905E0102EDF /* Pods_WhataAppStatusViewTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5BDD77948C3EF362689FA0C2B702970A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */,
+				C119902DF08B8FBBA21B8504BE74202A /* Pods-WhataAppStatusView */,
+				CEB3CB9047D1EFD7B0D74035C2DBB4BD /* Pods-WhataAppStatusViewTests */,
+				B887BA0ECF52C1204EFE0681DF055A05 /* Pods-WhataAppStatusViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AFB1E0B1263998C936854A6CB11FD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E136551624A6237062FB56A50900ED7D /* Pods-WhataAppStatusViewTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809FA6DE3ED35BB7B97126DA58072C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3448F958C584DB2F0007F60C1D7C8F0E /* AnimatedCollectionViewLayout-dummy.m in Sources */,
+				61C552D3D8E8535D17FE67E7A1241E2F /* AnimatedCollectionViewLayout.swift in Sources */,
+				1DB658B6052ECB623162518123B77756 /* CrossFadeAttributesAnimator.swift in Sources */,
+				6C3E0ED549F157B68511CEA0FCFFBE2C /* CubeAttributesAnimator.swift in Sources */,
+				675FC8085F139617288ECDF622AFBDB7 /* LayoutAttributesAnimator.swift in Sources */,
+				25C0613E2A219CCBC754E32839090857 /* LinearCardAttributesAnimator.swift in Sources */,
+				A54630491BB0108B124C967C2A100F08 /* PageAttributesAnimator.swift in Sources */,
+				1802C70744FC5ACF32217ACBF5260972 /* ParallaxAttributesAnimator.swift in Sources */,
+				1125A5CE7857DA14A4C8E6D742C4596F /* RotateInOutAttributesAnimator.swift in Sources */,
+				0FDDDEBF4DB465F3EE253A58B15419DF /* SnapInAttributesAnimator.swift in Sources */,
+				520A9C5F907E09600B65840BD97D7CC7 /* UIView+Anchor.swift in Sources */,
+				7F40B8BBCC675E39488BCC8C4B49268A /* ZoomInOutAttributesAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9239557360134B2D39D5AC1A05838D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1AE9BCC0356B6DA23C0910A8D3C07C /* Pods-WhataAppStatusViewUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFAC31AE21E18AFC926944FB3F7456E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6530161EB5F536343D7313AA5E4970 /* Pods-WhataAppStatusView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		902B3008E326C2F6E353131A6EB7F2A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnimatedCollectionViewLayout;
+			target = 01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */;
+			targetProxy = EF66261F0A0AAFDB74CC33CB5C409658 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		299832A4122C2B03FD8DE74DC52FF69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.modulemap";
+				PRODUCT_NAME = AnimatedCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C3FA05C688CCB94EE7116E7E845E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4148042A70D55C92DCD649190A7DFE /* Pods-WhataAppStatusViewTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E81ACAC921B5D6CD93F5102326B230A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F53AA00537696DBAFF6882DFAE7F932 /* Pods-WhataAppStatusView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3521F1200063F76F25922B842ACC3449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1AD300A71782C540661D47E6FC0A8B3 /* Pods-WhataAppStatusViewTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusViewTests/Pods-WhataAppStatusViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		661A72F434DE93D9B8788693CE9D3624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CC4C2C37EA450A9146ADBA7F4B60FC /* Pods-WhataAppStatusView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusView/Pods-WhataAppStatusView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		84423834C0DDEC5B97F6F08EC1CAA9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.modulemap";
+				PRODUCT_NAME = AnimatedCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD545E2825DB88FA0D4457E4A2B3D4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3967E2F49C4AF777A850273F6F747ED4 /* Pods-WhataAppStatusViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDFFEF1E5EF0493DACEEDE6901DBA5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA1F7483AE4E11936CE2E92D2E3171F /* Pods-WhataAppStatusViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhataAppStatusViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhataAppStatusViewUITests/Pods-WhataAppStatusViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WhataAppStatusViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501057DFF3B0B1AE04BDE7C37D1030C7 /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3521F1200063F76F25922B842ACC3449 /* Debug */,
+				2C3FA05C688CCB94EE7116E7E845E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D648DDFE492E75ACDA96D5B9AF1EB32 /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E81ACAC921B5D6CD93F5102326B230A /* Debug */,
+				661A72F434DE93D9B8788693CE9D3624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97CCAED439F01986FCE2DAA710E330CD /* Build configuration list for PBXNativeTarget "Pods-WhataAppStatusViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD545E2825DB88FA0D4457E4A2B3D4BE /* Debug */,
+				FDFFEF1E5EF0493DACEEDE6901DBA5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C88F719B2AF55EEFFD88A2BE8F10DD /* Build configuration list for PBXNativeTarget "AnimatedCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299832A4122C2B03FD8DE74DC52FF69F /* Debug */,
+				84423834C0DDEC5B97F6F08EC1CAA9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
